@@ -1,6 +1,6 @@
 type ConditionalClasses  = Record<string, boolean | string>
 
-export function classNames(classes: string[], conditionalClasses?: ConditionalClasses): string {
+export function formatClassNames(classes: string[], conditionalClasses?: ConditionalClasses): string {
     return [
         ...classes,
         conditionalClasses
