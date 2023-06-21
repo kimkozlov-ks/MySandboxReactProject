@@ -3,6 +3,7 @@ import {formatClassNames} from "shared/libs/ClassNamesFormatter/formatClassNames
 import css from './SidebarLayout.module.scss'
 import {ThemeSwitcher} from "shared/libs/Theme";
 import {Button, ButtonTheme} from "shared/ui/Button";
+import {LanguageSwitcher} from "shared/libs/Language";
 
 interface SidebarLayoutProps {
     classNames?: string[]
@@ -22,7 +23,7 @@ export const Sidebar: FC<SidebarLayoutProps> = ({
                 onClick={toggle}>{collapsed ? '>>>' : '<<<'}</Button>
             <div className={css.switchers}>
                 <ThemeSwitcher />
-            {/*    <LangSwitcher /> */}
+                <LanguageSwitcher />
             </div>
         </div>
     );
