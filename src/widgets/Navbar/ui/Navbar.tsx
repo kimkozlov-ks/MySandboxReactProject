@@ -1,7 +1,7 @@
 import {FC} from 'react';
 import {formatClassNames} from "shared/libs/ClassNamesFormatter/formatClassNames";
+import { AppLink , AppLinkTheme } from 'shared/ui/AppLink';
 import css from './Navbar.module.scss'
-import {AppLink, AppLinkTheme} from "shared/ui/AppLink/AppLink";
 
 interface NavbarProps {
     classNames?: string[]
