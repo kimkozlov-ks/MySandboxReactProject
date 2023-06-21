@@ -12,8 +12,8 @@ export const Navbar: FC<NavbarProps> = ({
 }) => {
     return (
         <div className={formatClassNames([css.Navbar, ...classNames])}>
-            <AppLink theme={AppLinkTheme.SECONDARY} to='/'>Main</AppLink>
-            <AppLink to='/about'>About</AppLink>
+            <AppLink classNames={[css.linkPadding]} theme={AppLinkTheme.SECONDARY} to='/'>Main</AppLink>
+            <AppLink classNames={[css.linkPadding]} to='/about'>About</AppLink>
         </div>
     );
 }
